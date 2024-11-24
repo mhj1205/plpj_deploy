@@ -15,7 +15,9 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 const {SPACE_ID,API_KEY} =require("./confing");
+const apiKey = process.env.NEXT_PUBLIC_GATHER_API_KEY;
 
+console.log("Gather API Key:", apiKey);
 const URL = "http://localhost:8080"
 
 
